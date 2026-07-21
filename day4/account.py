@@ -31,11 +31,13 @@ account2 = Account("Sara", "1002", 500)
 
 # Transactions
 account1.deposit(300)
+
 account1.withdraw(200)
+
 
 account2.deposit(-50)
 account2.withdraw(700)
 
-# Show balances
+#show balance
 print(f"{account1.owner}'s balance: {account1.balance}")
 print(f"{account2.owner}'s balance: {account2.balance}")
