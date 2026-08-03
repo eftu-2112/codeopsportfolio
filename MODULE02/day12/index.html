@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Habesha Eatery | Ethiopian Restaurant</title>
+
+    <meta
+        name="description"
+        content="Habesha Eatery serves delicious Ethiopian food, traditional dishes, coffee, and drinks. Reserve your table today."
+    >
+
+</head>
+
+<body>
+
+    <!-- Skip link for keyboard users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!--  HEADER  -->
+    <header>
+        <div class="container">
+
+            <h1>Habesha Eatery</h1>
+
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="#reservation">Reservation</a>
+                <a href="#menu">Menu</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- MAIN -->
+    <main id="main-content">
+
+        <!-- HERO SECTION  -->
+        <section class="hero">
+            <div class="container">
+
+                <h2>Welcome to Habesha Eatery</h2>
+
+                <p>
+                    Enjoy authentic Ethiopian food, traditional flavors,
+                    fresh ingredients, and a welcoming dining experience.
+                </p>
+
+                <figure>
+                    <img
+                        src="assets/e6fcf5bf41d96ac9baa1bd11e647e07d.jpg"https:"
+                        alt="Traditional Ethiopian food served with injera at Habesha Eatery"
+                        width="800"
+                        height="500"
+                        loading="lazy"
+                    >
+
+                    <figcaption>
+                        Traditional Ethiopian food at Habesha Eatery
+                    </figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+
+        <!-- AUDIO SECTION  -->
+        <section class="audio-section">
+            <div class="container">
+
+                <h2>A Message From Habesha Eatery</h2>
+
+                <p>
+                    Listen to our short welcome message.
+                </p>
+
+                <audio controls>
+                    <source src="assets/welcome.mp3" type="audio/mpeg">
+
+                    Your browser does not support the audio element.
+                </audio>
+
+            </div>
+        </section>
+
+
+        <!-- RESERVATION-->
+        <section id="reservation">
+            <div class="container">
+
+                <h2>Reserve a Table</h2>
+
+                <p>
+                    Fill out the form below to reserve your table at
+                    Habesha Eatery.
+                </p>
+
+
+                <form action="/reserve" method="post">
+
+                    <!-- PERSONAL INFORMATION -->
+                    <fieldset>
+
+                        <legend>Your Information</legend>
+
+
+                        <!-- NAME -->
+                        <label for="name">Full Name:</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required
+                        >
+
+                          <br>
+                          <br>
+                        <!-- PHONE -->
+                        <label for="phone">Phone Number:</label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="0911223344"
+                            pattern="09[0-9]{8}"
+                            required
+                        >
+
+                        <small>
+                            Enter a 10-digit Ethiopian phone number starting with 09.
+                        </small>
+
+                    </fieldset>
+
+
+                    <!-- BOOKING INFORMATION -->
+                    <fieldset>
+
+                        <legend>Booking Information</legend>
+
+
+                        <!-- NUMBER OF GUESTS -->
+                        <label for="guests">Number of Guests:</label>
+                        <input
+                            type="number"
+                            id="guests"
+                            name="guests"
+                            min="1"
+                            max="20"
+                            required
+                        >
+
+                            <br>
+                            <br>
+                        <!-- DATE -->
+                        <label for="date">Reservation Date:</label>
+
+                        <input
+                            type="date"
+                            id="date"
+                            name="date"
+                            required
+                        >
+                        <br>
+                        <br>
+                    
+
+
+                        <!-- BRANCH -->
+                        <label for="branch">Preferred Branch:</label>
+
+                        <select id="branch" name="branch" required>
+
+                            <option value="">-- Select a branch --</option>
+
+                            <option value="bole">Bole</option>
+
+                            <option value="piassa">Piassa</option>
+
+                            <option value="kazanchis">Kazanchis</option>
+
+                            
+
+                        </select>
+
+                    </fieldset>
+
+
+                    <!-- RADIO BUTTONS -->
+                    <fieldset>
+
+                        <legend>Seating Preference</legend>
+
+                        <p>Choose one seating option:</p>
+
+
+                        <input
+                            type="radio"
+                            id="indoor"
+                            name="seating"
+                            value="indoor"
+                            required
+                        >
+
+                        <label for="indoor">Indoor</label>
+
+
+                        <input
+                            type="radio"
+                            id="outdoor"
+                            name="seating"
+                            value="outdoor"
+                        >
+
+                        <label for="outdoor">Outdoor</label>
+
+
+                        <input
+                            type="radio"
+                            id="terrace"
+                            name="seating"
+                            value="terrace"
+                        >
+
+                        <label for="terrace">Terrace</label>
+
+                    </fieldset>
+
+
+                    <!-- CHECKBOXES -->
+                    <fieldset>
+
+                        <legend>Additional Requests</legend>
+
+                        <p>
+                            Select any additional services you need:
+                        </p>
+
+
+                        <input
+                            type="checkbox"
+                            id="wifi"
+                            name="requests"
+                            value="wifi"
+                        >
+
+                        <label for="wifi">Wi-Fi</label>
+
+
+                        <input
+                            type="checkbox"
+                            id="baby-chair"
+                            name="requests"
+                            value="baby-chair"
+                        >
+
+                        <label for="baby-chair">Baby Chair</label>
+
+
+                        <input
+                            type="checkbox"
+                            id="birthday"
+                            name="requests"
+                            value="birthday"
+                        >
+
+                        <label for="birthday">
+                            Birthday Decoration
+                        </label>
+
+                    </fieldset>
+
+
+                    <!-- SUBMIT -->
+                    <button type="submit">
+                        Reserve Table
+                    </button>
+
+                </form>
+
+            </div>
+        </section>
+
+
+        <!--  MENU -->
+        <section id="menu">
+            <div class="container">
+
+                <h2>Our Menu</h2>
+    <h3>Habesha Eatery Food Menu and Prices</h3>
+
+    <table border="1">
+        <tr>
+            <th>Category</th>
+            <th>Dish</th>
+            <th>Price</th>
+        </tr>
+
+        <tr>
+            <td rowspan="3">Main Dishes</td>
+            <td>Doro Wat</td>
+            <td>320 ETB</td>
+        </tr>
+
+        <tr>
+            <td>Tibs</td>
+            <td>280 ETB</td>
+        </tr>
+
+        <tr>
+            <td>Beyaynetu</td>
+            <td>300 ETB</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Special Combos</td>
+            <td>Family Combo</td>
+            <td>650 ETB</td>
+        </tr>
+
+        <tr>
+            <td>Special Platter</td>
+            <td>450 ETB</td>
+        </tr>
+    </table>
+
+
+            </div>
+        </section> 
+
+
+        <!--  LOCATION  -->
+        <section id="location">
+            <div class="container">
+
+                <h2>Find Us</h2>
+
+                <p>
+                    Visit Habesha Eatery and enjoy traditional Ethiopian food.
+                </p>
+
+                <iframe
+                    src="https://www.google.com/maps?q=Bole%20Addis%20Ababa&output=embed"
+                    title="Map showing Habesha Eatery location in Bole, Addis Ababa"
+                    loading="lazy"
+                    width="600"
+                    height="450"
+                ></iframe>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!--FOOTER  -->
+    <footer>
+
+        <div class="container">
+
+            <address>
+
+                Habesha Eatery<br>
+
+                Bole, Addis Ababa, Ethiopia<br>
+
+                Phone:
+                <a href="tel:+251911223344">
+                    +251 911 223 344
+                </a>
+
+                <br>
+
+                Email:
+                <a href="mailto:info@habeshaeatery.com">
+                    info@habeshaeatery.com
+                </a>
+
+            </address>
+
+
+            <p>
+                Opening Hours: Monday - Sunday, 8:00 AM - 10:00 PM
+            </p>
+
+
+            <p>
+                &copy; 2026 Habesha Eatery. All rights reserved.
+            </p>
+
+
+            <p>
+                <a href="contact.html">Contact Us</a>
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
