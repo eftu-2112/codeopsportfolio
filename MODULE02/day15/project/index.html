@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habesha Eatery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Habesha Eatery</div>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#reserve">Reserve</a>
+    </nav>
+  </header>
+
+  
+  <main class="container">
+    
+   
+    <section class="hero">
+      <h1 class="hero-title">Authentic Ethiopian Flavors</h1>
+      <p>Experience traditional dining in the heart of Addis Ababa.</p>
+      <a href="#reserve" class="btn">Book a Table</a>
+    </section>
+
+    
+    <section id="about" class="about">
+      <h2>Our Story</h2>
+      <p>Crafting delicious, authentic Habesha dishes made with passion and heritage.</p>
+    </section>
+
+    
+    <section id="menu" class="menu-container">
+      <h2>Featured Dishes</h2>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <img src="image/doro wet (2).jpg" alt="Doro Wat">
+          <h3>Doro Wat</h3>
+          <p class="price">320 ETB</p>    
+          <p>Spicy chicken stew served with traditional injera and boiled egg.</p>
+        </article>
+
+        <article class="menu-card">
+          <img src="image/beyaynet.jpg" alt="Beyaynet">
+          <h3>Beyaynet</h3>
+          <p class="price">250 ETB</p>
+          <p>A vibrant colorful platter of varied vegetarian dishes.</p>
+        </article>
+
+        <article class="menu-card">
+          <img src="image/tibs.png" alt="Tibs">
+          <h3>Tibs</h3>
+          <p class="price">380 ETB</p>
+          <p>Sautéed meat cooked with garlic, onions, and rosemary.</p>
+        </article>
+      </div>
+    </section>
+
+    
+    <section id="reserve" class="reservation">
+      <h2>Reserve a Table</h2>
+      <form class="reservation-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="guests">Number of Guests</label>
+        <input type="number" id="guests" name="guests" min="1" max="10" required>
+
+        <button type="submit" class="btn">Confirm Booking</button>
+      </form>
+    </section>
+
+    
+    <div class="toast">Reservation Confirmed!</div>
+  </main>
+
+ 
+  <footer>
+    <p>Bole Road, Addis Ababa | Phone: +251 911 000 000 | Hours: 10 AM - 10 PM</p>
+  </footer>
+
+</body>
+</html>
